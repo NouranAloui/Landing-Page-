@@ -1,0 +1,725 @@
+
+body {
+    margin: 0;  
+    padding: 0; 
+    width: 100%;
+    font-family: inter;
+    overflow-x: hidden;
+}
+
+.navbar
+{
+    width: 100%;
+    background-color:  #0B9586;
+    display: flex;
+    justify-content:center;
+    gap: 300px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+.navBC{
+    display: flex;
+    gap: 50px;
+}
+.navButtons{
+    width: max-content;
+    background-color: #0B9586;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    font-size: medium;
+}
+.navButtons:hover{
+    background-color: #0a8c7e;
+    /* border-bottom: #054b43; */
+    border-bottom: 1px solid #076258 ;
+    /* mix-blend-mode: multiply;  */
+}
+
+#chosenButton{
+    background-color: #0a8c7e;
+    /* border-bottom: #054b43; */
+    border-bottom: 1px solid #076258 ;
+    /* mix-blend-mode: multiply;  */
+}
+.call
+{
+    width: max-content;
+    padding-left: 65px; 
+    font-size:small
+}
+.logo
+{
+    height: 26px; 
+    opacity:15% ;
+} 
+.sectionImg
+{
+    width: 100%;
+}
+
+.textBox
+{
+    position: absolute; 
+    top:25%; 
+    color:white; 
+    width:50%;  
+    padding: 0 10%; 
+    font-size: large;
+}
+.roundButtom
+{
+    border:2px; 
+    border-radius:20px; 
+    width:150px; 
+    height:40px;
+}
+.roundButtom:hover
+{ 
+    opacity: 0.8;
+}
+.buttonFont
+{
+    font-size: 180px;
+}
+
+.section2
+{
+    position:sticky;
+    display: flex; 
+    gap:10px; 
+    /* height:max-content;  */
+    margin:0 10%;
+    width: 100%;
+}
+.greenText
+{
+    color: #84BD3A;
+}
+.section2Text2
+{
+    display: flex;
+    flex-direction:column; 
+    gap:10px;
+    margin-top: 10%;
+}
+.section2Title
+{
+    font-weight: bold; 
+    font-size:42px
+ 
+}
+.section2Img
+{
+    margin: 30px; 
+    flex:1;
+    
+}
+.section2TextBox
+{
+    width:50%;
+
+}
+#viewButton
+{
+    color: #3cab90; 
+    border:0; 
+    background-color:rgba(255, 255, 255, 0); 
+    display:flex;
+    margin: 10px;
+    grid-row: 99;
+}
+#viewButton:hover
+{
+    text-decoration: underline  ;
+}
+.headT
+{
+    font-size: 52px;
+}
+.card
+{
+    flex: 1;  
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.cardDiv
+{
+    display: flex; 
+    gap:20px;  
+    width:80%;
+}
+#section4
+{
+    display:flex; 
+    align-items:center; 
+    flex-direction:column; 
+    margin:10px; 
+    justify-content: center; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#cardText
+{
+    width: 350px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    margin:10px;
+}
+#repTitle
+{
+    font-weight: bold; 
+    font-size:42px;
+}
+#repText
+{
+    font-size:20px;
+}
+.card2
+{
+    border: rgba(60, 171, 144, 1) 1px solid;
+    border-radius: 10px;
+    background-color: rgba(60, 171, 143, 0.05);
+    width: 100%;
+    display: grid;
+}
+.card2-container
+{
+    flex:3;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    gap: 10px; /* Space between grid items */
+}
+#EDiv
+{
+    flex: 1;
+    margin-right: 50px;
+}
+ 
+/* .card2 img {
+    width: 50%;
+    display: block;
+} */
+
+/* .card2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #09e765; /* Adjust to match the card background */
+    /*mix-blend-mode: multiply;
+    opacity: 0.5; Adjust transparency */
+/* } */ 
+#card2Text
+{
+    padding: 8px; 
+    font-size:16px;
+}
+.section6
+{
+    position: relative; 
+    display:flex; 
+    justify-content: center; 
+    width: 80%;
+    padding: 5% 10%;
+}
+#card22-container
+{
+    display: flex; 
+    justify-content: space-between;  
+    gap:2%; 
+    margin:0 10%; 
+}
+#section8Part2
+{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 3 equal columns */
+    grid-template-rows: auto; /* Auto height */
+    gap: 15%;
+    grid-template-areas:
+        "a a a a a a b b"  /* 1st row: 2 items */
+        "c c c c c c c c"  /* 2nd row: 1 item spanning all 3 columns */
+        "d d d d d f f f"; /* 3rd row: 3 items */
+
+    background-color: rgba(60, 171, 144, 0.06);
+    padding: 1% 8% 8% 5%;
+    border-radius: 20px;
+    width: 50px;
+    height:max-content;
+    max-width: 80%; /* Set a more reasonable max-width */
+    min-height: max-content;
+}
+.section8
+{
+    display: flex; 
+    width: 80%;
+    margin: 10%;
+}
+#commentText
+{
+    grid-area: c; 
+    font-size:24px; 
+    max-width:90%;
+}
+.arrowImg
+{
+    width: 42px;
+} 
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(40, 54, 70, 1);
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.footerContainer
+{
+    display: flex;
+    width: 70%;
+    margin:50px;
+}
+#textEmailContainer
+{
+    position:relative; 
+    border-radius: 38px; 
+    height:50px; 
+}
+#subscribeButton
+{
+    position: absolute; 
+    top:0.5px;   
+    right:0.5px; 
+    border-radius: 38px; 
+    width:147px; 
+    height:50.5px; 
+    border:0; 
+    background-color:rgba(255, 187, 28, 1);
+    color: white;
+    
+}
+#input
+{
+    width:406px; 
+    border-radius: 38px; 
+    height:48px;
+    border: 1px #b3bdc7 solid;
+    background-color: #3b4857;
+    padding-left: 20px;
+}
+.footerButtons
+{
+    border: 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+.button-container
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10%;
+}
+.footerContainer
+{
+    font-size: 16px; 
+    color:white;
+
+}
+#contContEmail
+{
+    margin-left: auto; 
+    margin-top: auto;
+}
+#footerLine
+{
+    width: 80%; 
+    height:1px; 
+    background-color:rgba(113, 119, 125, 1);
+}
+@media (max-width: 1050px) {
+    .navbar {
+        gap: 200px; /* Smaller gap on smaller screens */
+        width: 100%;
+    }
+    .navBC
+    {
+        gap: 0;
+    }
+    .call
+    {
+        margin-left: 0;
+    }
+    .textBox
+    {
+        top:50px;
+        width:50%;
+    }
+    .section2
+    {
+        margin: 10px;
+    }
+    .cardDiv
+    {
+        overflow: auto;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    #section4
+    {
+        margin: 0;
+        overflow:scroll;
+    }
+    #repTitle
+    {
+        font-size:x-large;
+    }
+    #repText
+    {
+        font-size:large;
+        width: 500px;
+    }
+    #commentText
+    {
+        font-size:medium;
+    }
+    #userDesc
+    {
+        font-size: smaller;
+        width: max-content;
+    }
+    #section8Part2
+    {
+        gap: 5%;
+    }
+    .arrowImg
+    {
+        width: 35px;
+    } 
+    .footerContainer
+    { 
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        gap: 100px; /* Smaller gap on smaller screens */
+        width: 100%;
+    }
+    .navBC
+    {
+        gap: 0;
+    }
+    .call
+    {
+        margin-left: 0;
+    }
+    .textBox
+    {
+        font-size:medium;
+        top:50px;
+        width:50%;
+    }
+    .section2
+    {
+        margin: 0;
+    }
+    .section2TextBox
+    {
+        font-size: 16px;
+        margin: 20px;
+        width: 50%;
+    }
+    .section2Img
+    {
+        margin: 1px;
+        height: auto;
+        width: 100%;
+        margin-top: 40%;
+        
+    }
+    .headT
+    {
+        font-size:xx-large;
+    }
+    #repTitle
+    {
+        font-size:x-large;
+    }
+    #repText
+    {
+        font-size:medium;
+        width: 400px;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;   
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+    }
+    .section2Title
+    {
+        font-size:x-large;
+    }
+    .section2Img
+    {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        gap: 10px;  
+        width: 100%;
+    }
+    .navBC
+    {
+        gap: 0;
+    }
+    .call
+    {
+        margin-left: 0;
+        padding-left: 0px;
+    }
+    .textBox
+    {
+        font-size:small;
+        top:50px;
+        width:50%;
+    }
+    .section2
+    {
+        margin: 0;
+    }
+    .headT
+    {
+        font-size:medium;
+    }
+    #repTitle
+    {
+        font-size:medium;
+    }
+    #repText
+    {
+        font-size:small;
+        width: 200px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;   
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+    }
+    .roundButtom
+    {
+        width:max-content;
+        height:25px;
+        font-size: 10px;
+        
+    }
+    .section2
+    {
+        margin: 0;
+        width: 100%;
+        position:relative;
+        height: max-content;
+    }
+    .section2Title
+    {
+        font-size:20px;
+        
+    }
+    .section2text
+    {
+        font-size:10px;
+    }
+    .section2Text2
+    {
+         margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 5px;  
+        width: 100%;
+        padding: 1px;
+        font-size: 8px;
+    }
+    .navBC
+    {
+        gap: 0;
+    }
+    .navButtons{
+        font-size: 12px;
+    }
+    .call
+    {
+        margin-left: 0;
+        padding-left: 0px; 
+        font-size: 8px;
+    }
+    .logo
+    {
+        height: 13px; 
+    } 
+    .textBox
+    {
+        font-size:small;
+        top:8px;
+        width:50%;
+        font-size: 8px;
+    }
+    .roundButtom
+    {
+        width:max-content;
+        height:25px;
+        font-size: 8px;
+        
+    }
+    .section2
+    {
+        margin: 0;
+        width: 100%;
+        position:relative;
+        height: max-content;
+    }
+    .section2Title
+    {
+        font-size:16px;
+        
+    }
+    .section2text
+    {
+        font-size:10px;
+    }
+    .section2Text2
+    {
+         margin-bottom: 5%;
+    }
+    .section2Img
+    {
+        margin: 1px;
+        height: 40%;
+        position: absolute;
+        bottom: 1%;
+        left: 60%;
+        width:auto;
+    }
+     
+    .section2TextBox
+    {
+        font-size: 8px;
+        /* position: absolute; */
+        margin: 0 20px;
+        width: 80%;
+    }
+    .headT
+    {
+        font-size:small;
+    }
+    .cardDiv
+    {
+        overflow: auto;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    #section4
+    {
+        margin: 0;
+        overflow:scroll;
+    }
+    #repTitle
+    {
+        font-size:medium;
+    }
+    #repText
+    {
+        font-size:small;
+        width: 200px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;   
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+    }
+    .section6
+    {
+        flex-direction: column;
+    }
+    .card2-container
+    {
+        grid-template-columns: 1fr ; /* Two equal columns */
+        margin-top: 5px;
+    }
+    #card2Text
+    {
+        font-size: smaller;
+    }
+    #card22-container
+    {
+        flex-direction: column;
+        margin: 5%;
+        justify-content: space-between;
+        gap:10px;
+    }
+    .card2
+    {
+        width: 90%;
+    }
+    .section8
+    {
+        flex-direction: column;
+    }
+    #section8Part2
+    {
+        min-width: 90%;
+        margin-top: 10px;
+    }
+    .arrowImg
+    {
+        width: 30px;
+    } 
+    #input
+    {
+        width: 100%;
+        padding-left: 5px;
+    }
+    #textEmailContainer
+    {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    #subscribeButton
+    {
+        width: 50%;
+        left: 120px;
+    }
+    #contContEmail
+    {
+        margin: 0;
+    }
+    .footer
+    {
+        padding: 0;
+    }
+    #footerLine
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
