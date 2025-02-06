@@ -132,7 +132,8 @@ body {
 }
 #viewButton:hover
 {
-    text-decoration: underline  ;
+    text-decoration: underline;
+    opacity: 0.8;
 }
 .headT
 {
@@ -335,6 +336,11 @@ body {
     bottom:8%; 
     left:50%;
 }
+#subscribeButton:hover
+{
+    opacity: 0.8;
+}
+ 
 @media (max-width: 1050px) {
     body
     {
