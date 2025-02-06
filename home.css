@@ -199,22 +199,6 @@ body {
     margin-right: 50px;
 }
  
-/* .card2 img {
-    width: 50%;
-    display: block;
-} */
-
-/* .card2::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #09e765; /* Adjust to match the card background */
-    /*mix-blend-mode: multiply;
-    opacity: 0.5; Adjust transparency */
-/* } */ 
 #card2Text
 {
     padding: 8px; 
@@ -239,20 +223,20 @@ body {
 {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* 3 equal columns */
-    grid-template-rows: auto; /* Auto height */
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: auto; 
     gap: 15%;
     grid-template-areas:
-        "a a a a a a b b"  /* 1st row: 2 items */
-        "c c c c c c c c"  /* 2nd row: 1 item spanning all 3 columns */
-        "d d d d d f f f"; /* 3rd row: 3 items */
+        "a a a a a a b b"  
+        "c c c c c c c c"   
+        "d d d d d f f f";  
 
     background-color: rgba(60, 171, 144, 0.06);
     padding: 1% 8% 8% 5%;
     border-radius: 20px;
     width: 50px;
     height:max-content;
-    max-width: 80%; /* Set a more reasonable max-width */
+    max-width: 80%; 
     min-height: max-content;
 }
 .section8
@@ -345,10 +329,20 @@ body {
     height:1px; 
     background-color:rgba(113, 119, 125, 1);
 }
+#section2SmallImg
+{
+    position: absolute; 
+    bottom:8%; 
+    left:50%;
+}
 @media (max-width: 1050px) {
+    body
+    {
+        overflow-x: hidden;
+    }
     .navbar {
         gap: 200px; /* Smaller gap on smaller screens */
-        width: 100%;
+        width: 98%;
     }
     .navBC
     {
@@ -414,9 +408,18 @@ body {
         text-align: center;
     
     }
+    #section2SmallImg
+    {
+        width: 200px;
+    }
+    .footer
+    {
+        width: 80%;
+    }
 }
 
 @media (max-width: 950px) {
+    
     .navbar {
         gap: 100px; /* Smaller gap on smaller screens */
         width: 100%;
@@ -478,12 +481,22 @@ body {
     {
         margin-top: 25px;
     }
+    #section2SmallImg
+    {
+        width: 200px;
+        left: 47%;
+    }
+    .footer
+    {
+        width: 80%;
+    }
 }
 
 @media (max-width: 750px) {
     .navbar {
         gap: 10px;  
-        width: 100%;
+        width: 96%;
+
     }
     .navBC
     {
@@ -537,7 +550,9 @@ body {
     }
     .section2Title
     {
-        font-size:20px;
+        font-size:18px;
+        margin-top: 0;
+        
         
     }
     .section2text
@@ -546,7 +561,22 @@ body {
     }
     .section2Text2
     {
-         margin-bottom: 5%;
+        margin-bottom: 5%;
+        font-size: small;
+    }
+    #section2SmallImg
+    {
+        width: 150px;
+        bottom: 40px;
+        left: 40%;
+    }
+    #viewButton
+    {
+        width: 25px;
+    }
+    .footer
+    {
+        width: 80%;
     }
 }
 
@@ -720,6 +750,28 @@ body {
         width: 60%;
         margin-left: 20%;
         margin-right: 20%;
+    }
+    #section2SmallImg
+    {
+        width: 50px;
+        bottom: 5px;
+        left: 55%;
+    }
+    .section2Text2
+    {
+        font-size:8px;
+    }
+    .section2text
+    {
+        font-size:8px;
+    }
+    .footer
+    {
+        width: 99.5%;
+    }
+    .navbar
+    {
+        width: 99.5%;
     }
 
 }
